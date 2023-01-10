@@ -1,0 +1,23 @@
+﻿
+
+@{
+    ViewBag.Title = "Payment2";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<form action="/Home/ToPays" method="post">
+    Gói:<select class="form-select" aria-label="Default select example" name="Package" class="form-control">
+        <option value="1">Cơ bản</option>
+        <option value="2">Thông thường</option>
+        <option value="3">Premium</option>
+    </select>
+    Số tháng mua:<input type="number" name="Month">
+
+    Voucher:<select class="form-select" aria-label="Default select example" name="voucherid" class="form-control">
+        @foreach (var item in ViewBag.voucher)
+        {
+            <option value="@item.VoucherID">Vé @item.VoucherID:Sô lượng còn lại @item.Amount: Giá tiền giảm: @item.Num_Discount</option>
+        }
+    </select>
+    <input type="submit" class="form-control">
+</form>
+

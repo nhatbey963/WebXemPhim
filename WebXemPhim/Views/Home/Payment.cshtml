@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Payment";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div align="center">
+    <h2>CÁC GÓI CƯỚC FILM</h2>
+
+    <div class="col-3">
+        <div class="row-cols-md-1 bg-dark text-white">
+            <h2>Gói cơ bản</h2>
+            <ul>
+                <li>Xem được tất cả film</li>
+                <li>Không HD</li>
+                <li>Có Ads</li>
+            </ul>
+            <p><a class="btn btn-default bg-danger text-white" href="@Url.Action("Payment2", "Home")">Mua gói 10000đ/tháng &raquo;</a></p>
+        </div>
+        <div class="row-cols-md-1 bg-dark text-white">
+            <h2>Gói thông thường</h2>
+            <ul>
+                <li>Xem được tất cả film</li>
+                <li>Film HD</li>
+                <li>Không Ads</li>
+            </ul>
+            <p><a class="btn btn-default bg-danger text-white" href="@Url.Action("Payment2", "Home")">Mua gói 20000đ/tháng &raquo;</a></p>
+        </div>
+        <div class="row-cols-md-1 bg-dark text-white">
+            <h2>Gói PREMIUM</h2>
+            <ul>
+                <li>Xem được tất cả film</li>
+                <li>Film Ultra HD</li>
+                <li>Không Ads</li>
+            </ul>
+            <p><a class="btn btn-default bg-danger text-white" href="@Url.Action("Payment2", "Home")">Mua gói 30000đ/tháng &raquo;</a></p>
+        </div>
+    </div>
+</div>

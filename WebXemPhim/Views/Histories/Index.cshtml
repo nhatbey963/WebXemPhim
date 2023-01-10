@@ -1,0 +1,52 @@
+﻿@model IEnumerable<WebXemPhim.Models.History>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Quản lý lịch sử giao dịch</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Money)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeStamp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.Username)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Voucher.VoucherID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Money)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeStamp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.Username)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Voucher.VoucherID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.HistoryID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.HistoryID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.HistoryID })
+        </td>
+    </tr>
+}
+
+</table>

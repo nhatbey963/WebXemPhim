@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="38b2f8a6c02647408bf7b1062f52e28c" Name="Diagram1">
+        <EntityTypeShape EntityType="WebXemPhimModel.Advertise" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebXemPhimModel.Author" Width="1.5" PointX="0.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebXemPhimModel.Category" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebXemPhimModel.Comment" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebXemPhimModel.Country" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebXemPhimModel.Film" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebXemPhimModel.Genre" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebXemPhimModel.History" Width="1.5" PointX="8" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebXemPhimModel.sysdiagram" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebXemPhimModel.User" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebXemPhimModel.UserVoucher" Width="1.5" PointX="8" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebXemPhimModel.Voucher" Width="1.5" PointX="5.75" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="WebXemPhimModel.FK_Film_Author" ManuallyRouted="false" />
+        <AssociationConnector Association="WebXemPhimModel.FK_Film_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="WebXemPhimModel.FK_Comment_Film" ManuallyRouted="false" />
+        <AssociationConnector Association="WebXemPhimModel.FK_Comment_User" ManuallyRouted="false" />
+        <AssociationConnector Association="WebXemPhimModel.FK_Film_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="WebXemPhimModel.FK_Film_Genre" ManuallyRouted="false" />
+        <AssociationConnector Association="WebXemPhimModel.FK_History_User" ManuallyRouted="false" />
+        <AssociationConnector Association="WebXemPhimModel.FK_History_Voucher" ManuallyRouted="false" />
+        <AssociationConnector Association="WebXemPhimModel.FK_UserVoucher_User" ManuallyRouted="false" />
+        <AssociationConnector Association="WebXemPhimModel.FK_UserVoucher_Voucher" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
